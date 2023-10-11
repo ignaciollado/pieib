@@ -6,8 +6,9 @@ a {
         color: rgb(33, 37, 41);
         text-decoration: none;
         
-        .card-title {
-            text-decoration: underline;   
+        .card-title, .card-text {
+            text-decoration: none;   
+            color: rgb(204, 7, 60);
         }
     }
 }
