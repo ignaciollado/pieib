@@ -1,5 +1,6 @@
 # Pieib
 Dirección General de Empresa, Autónomos y Comercio
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
 
 ## Development server
@@ -26,9 +27,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-## Depenencies
+## Dependencies
 
-material
-scss
-pwa
-ngx-masonry
+- material
+- scss
+- pwa
+- ngx-masonry
+- bootstrap 5.3
