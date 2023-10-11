@@ -1,0 +1,53 @@
+a {
+    color: rgb(33, 37, 41);
+    
+    &:focus,
+    &:hover {
+        color: rgb(33, 37, 41);
+        text-decoration: none;
+        
+        .card-title {
+            text-decoration: underline;   
+        }
+    }
+}
+
+.img-fluid {
+    width: 100% \9;
+}
+
+.card-grid {
+    .card-wrapper {
+        width: 33%;
+
+        @media screen and (max-width: 991px) {
+            width: 50%;
+        }
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+        
+        .card {
+            display: block !important;
+            height: 100%;
+        }
+    }
+    
+    .card-body {
+        position: relative;   
+    }
+}
+
+.new-badge {
+    background-color: #df8;
+    margin-right: -.25rem;
+    padding: .5rem;
+    position: absolute;
+    right: 0;
+    top: .25rem;
+    
+    .card-img-top + .card-body > & {
+        top: -3.5rem;   
+    }
+}
