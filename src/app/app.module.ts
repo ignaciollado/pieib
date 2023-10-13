@@ -15,6 +15,7 @@ import { I18nModule } from "./i18n/i18n.module";
 import { SelectLanguageComponent } from './Components/select-language/select-language.component';
 import { SliderHomeComponent } from './Components/slider-home/slider-home.component';
 import { CardsListComponent } from './Components/cards-list/cards-list.component';
+import { ParagraphHomeComponent } from './Components/paragraph-home/paragraph-home.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CardsListComponent } from './Components/cards-list/cards-list.component
     FooterComponent,
     SelectLanguageComponent,
     SliderHomeComponent,
-    CardsListComponent
+    CardsListComponent,
+    ParagraphHomeComponent
   ],
   imports: [
     BrowserModule,
