@@ -5,9 +5,9 @@ import {Router, ActivatedRoute} from '@angular/router';
 @Component({
   selector: 'app-select-language',
   template: `<div class="btn-group" role="group" name="selectLanguage" aria-label="Please, select your preferred language">
-                  <button mat-raised-button #langSelect (click)="switchLanguage('cat')">CAT</button>
-                  <button mat-raised-button #langSelect (click)="switchLanguage('cas')">CAS</button>
-                  <button mat-raised-button #langSelect (click)="switchLanguage('eng')">ENG</button>
+                  <button class="btn btn-outline-secondary" #langSelect (click)="switchLanguage('ca')">CAT</button>
+                  <button class="btn btn-outline-secondary" #langSelect (click)="switchLanguage('es')">CAS</button>
+                  <button class="btn btn-outline-secondary" #langSelect (click)="switchLanguage('en')">ENG</button>
             </div>`,
   styles: [`
     select:hover, option:hover {
