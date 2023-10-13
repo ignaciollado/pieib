@@ -36,3 +36,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - bootstrap 5.3
 - @ng-bootstrap/ng-bootstrap@next [native bootstrap for angular]
 - bootstrap-icons
+- @ngx-translate/http-loader
