@@ -69,7 +69,7 @@ a {
   }
   
   .btn {
-    border: 5px solid #fff !important; 
+    border: 2px solid #fff !important; 
     border-image-slice: 1;
 
     background: var(--gradient) !important;
@@ -87,4 +87,8 @@ a {
     border: 5px solid #fff !important; 
     box-shadow: #9e0c0c 1px 0 10px;
     text-decoration: underline;
+  }
+
+  .input-group{
+    justify-content: center;
   }
