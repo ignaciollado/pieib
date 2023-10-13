@@ -1,6 +1,6 @@
 <div class="pieib-header">
   <div id="pieib-header-logo"><a class="navbar-brand" href="#">pieib.com</a></div>
-  <div id="pieib-header-lang">cat | cas | eng</div>
+  <div id="pieib-header-lang"> <app-select-language></app-select-language></div>
   <div id="pieib-header-logo-goib"><a href="https://caib.es"><img src="../../../assets/logos/goib.svg" alt="logos GOIB" title="Govern de les Illes Balears" target="_blank"></a></div>
 </div>
 
@@ -13,20 +13,20 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item  dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Empresas-Econ. Social</a>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{'empresasEconSocial' | translate}}</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Empresas</a></li>
-            <li><a class="dropdown-item" href="#">Economía social</a></li>
+            <li><a class="dropdown-item" href="#">{{'empresas' | translate}}</a></li>
+            <li><a class="dropdown-item" href="#">{{'econSocial' | translate}}</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Autónomo</a>
+          <a class="nav-link" href="#">{{'autonomo' | translate}}</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Emprendedor
+            {{'emprendedor' | translate}}
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Ibstartup</a></li>
@@ -35,18 +35,18 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" aria-disabled="false">Comercio</a>
+          <a class="nav-link" href="#" aria-disabled="false">{{'comercio' | translate}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" aria-disabled="false">Internacionalización</a>
+          <a class="nav-link" href="#" aria-disabled="false">{{'internacionalizacion' | translate}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" aria-disabled="false">Proyectos estratégicos</a>
+          <a class="nav-link" href="#" aria-disabled="false">{{'proyectosEstrategicos' | translate}}</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <input class="form-control me-2" type="search" placeholder="{{'search' | translate}}" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">{{'search' | translate}}</button>
       </form>
     </div>
   </div>
