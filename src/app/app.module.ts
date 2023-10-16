@@ -16,6 +16,9 @@ import { SelectLanguageComponent } from './Components/select-language/select-lan
 import { SliderHomeComponent } from './Components/slider-home/slider-home.component';
 import { CardsListComponent } from './Components/cards-list/cards-list.component';
 import { ParagraphHomeComponent } from './Components/paragraph-home/paragraph-home.component';
+import { AyudasSubvHomeComponent } from './Components/ayudas-subv-home/ayudas-subv-home.component';
+import { TextoImagenHomeComponent } from './Components/texto-imagen-home/texto-imagen-home.component';
+import { SliderRedServiciosHomeComponent } from './Components/slider-red-servicios-home/slider-red-servicios-home.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { ParagraphHomeComponent } from './Components/paragraph-home/paragraph-ho
     SelectLanguageComponent,
     SliderHomeComponent,
     CardsListComponent,
-    ParagraphHomeComponent
+    ParagraphHomeComponent,
+    AyudasSubvHomeComponent,
+    TextoImagenHomeComponent,
+    SliderRedServiciosHomeComponent
   ],
   imports: [
     BrowserModule,
