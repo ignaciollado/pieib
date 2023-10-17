@@ -21,13 +21,12 @@ ngOnInit(): void {
 
 getHomeContents() {
     /**
-   *  category: promovemos la colaboración
-   *  ID: 12
+   *  el post: promovemos la colaboración
+   *  ID: 22
    * */
     this.contentService.getOneContentById(22)
           .subscribe( (textImageContent: any) => {
             this.contentTextImageItem = textImageContent
-            console.log ( this.contentTextImageItem )
           })
     }
 }

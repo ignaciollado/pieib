@@ -1,5 +1,5 @@
 <div *ngIf="!contentTextImageItem" class="name">Un momento ...</div>
-<!-- <div *ngFor="let homeContentItem of contentTextImageItems; let i=index; let odd=odd;" > -->
+
   <div class="row container-text-image">
 
     <div [innerHTML]="contentTextImageItem.content.rendered" class=""></div>
@@ -8,5 +8,4 @@
     </div>
 
   </div>
-   <!--  {{contentTextImageItem._embedded['wp:featuredmedia'][0].source_url}} -->
-<!-- </div> -->
+
