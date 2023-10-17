@@ -1,4 +1,12 @@
-<div *ngIf="!contentTextImageItems" class="name">Un momento ...</div>
-<div *ngFor="let homeContentItem of contentTextImageItems; let i=index; let odd=odd;" >
-    <div [innerHTML]="homeContentItem.content.rendered" class="align-top container-text-image">{{homeContentItem.content.rendered}}</div>
-</div>
+<div *ngIf="!contentTextImageItem" class="name">Un momento ...</div>
+<!-- <div *ngFor="let homeContentItem of contentTextImageItems; let i=index; let odd=odd;" > -->
+  <div class="row container-text-image">
+
+    <div [innerHTML]="contentTextImageItem.content.rendered" class=""></div>
+    <div class="">
+      <img src="{{contentTextImageItem._embedded['wp:featuredmedia'][0].source_url}}" alt="">
+    </div>
+
+  </div>
+   <!--  {{contentTextImageItem._embedded['wp:featuredmedia'][0].source_url}} -->
+<!-- </div> -->

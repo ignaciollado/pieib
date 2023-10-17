@@ -9,25 +9,25 @@ import { GetContentsService } from 'src/app/Services/get-contents.service';
 })
 export class TextoImagenHomeComponent {
   isNew: boolean = false
-  contentTextImageItems: any[] = []
+  contentTextImageItem: any = ""
 
-constructor(  private contentService: GetContentsService, 
+constructor(  private contentService: GetContentsService,
     private route: ActivatedRoute,
     private router: Router ) { }
 
 ngOnInit(): void {
       this.getHomeContents(  )
     }
-    
+
 getHomeContents() {
     /**
-   *  category: promovemos la colaboración 
+   *  category: promovemos la colaboración
    *  ID: 12
    * */
-    this.contentService.getAllHomeContents(12)
-          .subscribe( (homeContent: any) => {
-            this.contentTextImageItems = homeContent
-            console.log ( homeContent )
+    this.contentService.getOneContentById(22)
+          .subscribe( (textImageContent: any) => {
+            this.contentTextImageItem = textImageContent
+            console.log ( this.contentTextImageItem )
           })
     }
 }

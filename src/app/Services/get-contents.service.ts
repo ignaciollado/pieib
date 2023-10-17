@@ -11,7 +11,7 @@ import { OneArticle } from '../model/oneArticle.model'; */
 /* In this web
 contents are the WordPress POSTS */
 
-const theContentsServer ="https://app.pieib.com/wp-json/wp/v2/posts?"
+let theContentsServer ="https://app.pieib.com/wp-json/wp/v2/posts"
 
 @Injectable({
   providedIn: 'root'
@@ -22,11 +22,12 @@ export class GetContentsService {
 
   getAllHomeContents(categoryId: number) {
     console.log(categoryId)
-    return  this.http.get<any>(theContentsServer+'categories='+categoryId)
+    return  this.http.get<any>(theContentsServer+'?categories='+categoryId)
   }
 
-  getOneContent(contentId: number) {
-    return this.http.get<any>(`${theContentsServer}/${contentId}`)
+  getOneContentById(contentId: number) {0
+    theContentsServer = theContentsServer + '/' + contentId + '?&_embed'
+    return this.http.get<any>(`${theContentsServer}`)
   }
 
 
