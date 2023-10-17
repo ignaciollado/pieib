@@ -1,11 +1,4 @@
 <div *ngIf="!contentTextImageItems" class="name">Un momento ...</div>
-
-<div class="row">
-    <div *ngFor="let homeContentItem of contentTextImageItems; let i=index; let odd=odd;">
-        <div class="col">
-            <!-- <h2>{{homeContentItem.title.rendered}}</h2> -->
-            <div [innerHTML]="homeContentItem.content.rendered">{{homeContentItem.content.rendered}}</div>
-            <!-- <div class="card__body" [innerHTML]="homeContentItem.content.rendered.replaceAll( 'images/', 'https://app.pieib.com/images/')"></div> -->
-        </div>    
-    </div>
+<div *ngFor="let homeContentItem of contentTextImageItems; let i=index; let odd=odd;" >
+    <div [innerHTML]="homeContentItem.content.rendered" class="align-top container-text-image">{{homeContentItem.content.rendered}}</div>
 </div>

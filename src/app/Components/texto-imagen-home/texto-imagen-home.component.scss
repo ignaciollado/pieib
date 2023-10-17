@@ -1,3 +1,11 @@
-.row{
+.container-text-image{
+    display: grid!important;
+    grid-template-columns: 40% 60%!important;
+    gap: 1rem;
     border: 1px solid red;
+    margin-top: 1rem;
+}
+
+div > img {
+    width: 98%!important;
 }
