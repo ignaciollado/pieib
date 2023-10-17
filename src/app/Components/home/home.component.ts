@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { GetContentsService } from 'src/app/Services/get-contents.service';
+import { GetFixedContentsService } from 'src/app/Services/get-fixed-contents.service';
 
 
 @Component({
@@ -13,7 +13,7 @@ export class HomeComponent {
 isNew: boolean = false
 homeContentItems: any[] = []
 
-constructor(  private contentService: GetContentsService, 
+constructor(  private contentService: GetFixedContentsService, 
               private route: ActivatedRoute,
               private router: Router ) { }
 
@@ -24,7 +24,7 @@ ngOnInit(): void {
 
 getHomeContents() {
 
-  this.contentService.getAllContents()
+  this.contentService.getAllHomeContents()
       .subscribe( (homeContent: any) => {
         this.homeContentItems = homeContent
         console.log ( homeContent )

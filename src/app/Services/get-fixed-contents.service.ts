@@ -9,20 +9,21 @@ import { catchError, map, tap } from 'rxjs/operators';
 import { OneArticle } from '../model/oneArticle.model'; */
 
 /* In this web
-contents are the WordPress POSTS */
+contents are the WordPress PAGES */
 
-const theContentsServer ="https://app.pieib.com/wp-json/wp/v2/posts?"
+const theContentsServer ="https://app.pieib.com/wp-json/wp/v2/pages"
 
 @Injectable({
   providedIn: 'root'
 })
-export class GetContentsService {
+export class GetFixedContentsService {
 
   constructor( private http: HttpClient ) { }
 
-  getAllHomeContents(categoryId: number) {
-    console.log(categoryId)
-    return  this.http.get<any>(theContentsServer+'categories='+categoryId)
+  getAllHomeContents() {
+/*     this.messagesService.add('ArticleService: fetched ALL articles')
+    return this.http.get<Article>( this.apiBaseUrl, { headers: this.headers } ) */
+    return  this.http.get<any>(`${theContentsServer}`)
   }
 
   getOneContent(contentId: number) {

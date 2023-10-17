@@ -19,11 +19,11 @@ constructor(  private contentService: GetContentsService,
     private router: Router ) { }
 
 ngOnInit(): void {
-      this.getHomeContents(  )
+      this.getStaticHomeContents(  )
     }
     
-getHomeContents() {
-    this.contentService.getAllContents()
+getStaticHomeContents() {
+    this.contentService.getAllHomeContents(99999)
           .subscribe( (homeContent: any) => {
             this.homeContentItems = homeContent
             console.log ( homeContent )
