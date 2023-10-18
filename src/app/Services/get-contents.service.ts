@@ -30,5 +30,4 @@ export class GetContentsService {
     return this.http.get<any>(`${theContentsServer}`)
   }
 
-
 }

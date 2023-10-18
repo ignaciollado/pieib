@@ -1,102 +1,75 @@
 <div *ngIf="!contentRedServiciosEmpresariales" class="name">Un momento ...</div>
 
 <div class="row container-red-servicios-empresariales">
-<h1 [innerHTML]="contentRedServiciosEmpresariales.title.rendered"></h1>
-
-  <div [innerHTML]="contentRedServiciosEmpresariales.content.rendered" class=""></div>
-
-  <div class="container text-center my-3">
+    <h1 [innerHTML]="contentRedServiciosEmpresariales.title.rendered"></h1>
+    <div [innerHTML]="contentRedServiciosEmpresariales.content.rendered" class=""></div>
     <h2 class="font-weight-light">Servicios públicos empresariales Baleares</h2>
-    <div class="row mx-auto my-auto justify-content-center">
-        <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="//via.placeholder.com/500x400/31f?text=1" class="img-fluid">
-                            </div>
-                            <div class="card-img-overlay">Slide 1</div>
-                        </div>
+    
+    <div id="gallery" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+<!--        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button> -->
+          </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col">
+                        <a href=""><img class="img-fluid" src="http://via.placeholder.com/800x450/caa8f5/ffffff?text=IDI" alt="IDI"/></a>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="//via.placeholder.com/500x400/e66?text=2" class="img-fluid">
-                            </div>
-                            <div class="card-img-overlay">Slide 2</div>
-                        </div>
+                    <div class="col">
+                        <a href=""><img class="img-fluid" src="http://via.placeholder.com/800x450/9984d4/ffffff?text=AJE+Balears" alt="AJE Balears"/></a>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="//via.placeholder.com/500x400/7d2?text=3" class="img-fluid">
-                            </div>
-                            <div class="card-img-overlay">Slide 3</div>
-                        </div>
+                    <div class="col">
+                        <a href=""><img class="img-fluid" src="http://via.placeholder.com/800x450/592e83/ffffff?text=CAEB" alt="CAEB"/></a>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="//via.placeholder.com/500x400?text=4" class="img-fluid">
-                            </div>
-                            <div class="card-img-overlay">Slide 4</div>
-                        </div>
+                    <div class="col">
+                        <a href=""><img class="img-fluid" src="http://via.placeholder.com/800x450/230c33/ffffff?text=Cambra+de+Comerç+Mallorca" alt="Cambra de Comerç Mallorca"/></a>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="//via.placeholder.com/500x400/aba?text=5" class="img-fluid">
-                            </div>
-                            <div class="card-img-overlay">Slide 5</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="//via.placeholder.com/500x400/fc0?text=6" class="img-fluid">
-                            </div>
-                            <div class="card-img-overlay">Slide 6</div>
-                        </div>
+                    <div class="col">
+                        <a href=""><img class="img-fluid" src="http://via.placeholder.com/800x450/b27c66/ffffff?text=Cambra+de+Comerç+Eivissa+i+Formentera" alt="Cambra de Comerç Eivissa i Formentera"/></a>
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </a>
-            <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </a>
+
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <a href=""><img class="img-fluid" src="http://via.placeholder.com/800x450/f35b04/ffffff?text=ISBA+SGR" alt="ISBA SGR"/></a>
+                    </div>
+                    <div class="col">
+                        <a href=""><img class="img-fluid" src="http://via.placeholder.com/800x450/f18701/ffffff?text=Image+7" alt="Image 7"/></a>
+                    </div>
+                    <div class="col">
+                        <a href=""><img class="img-fluid" src="http://via.placeholder.com/800x450/f7b801/ffffff?text=Image+8" alt="Image 8"/></a>
+                    </div>
+                    <div class="col">
+                        <a href=""><img class="img-fluid" src="http://via.placeholder.com/800x450/7678ed/ffffff?text=Image+9" alt="Image 9"/></a>
+                    </div>
+                    <div class="col">
+                        <a href=""><img class="img-fluid" src="http://via.placeholder.com/800x450/3d348b/ffffff?text=Image+10" alt="Image 10"/></a>
+                    </div>
+                </div>
+            </div>
         </div>
+        
+       <!--  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button> -->
+
     </div>
-    <h5 class="mt-2 fw-light">advances one slide at a time</h5>
-</div>
-</div>
 
-<script>
-  let items = document.querySelectorAll('.carousel .carousel-item')
+</div>   
 
-items.forEach((el) => {
-    const minPerSlide = 4
-    let next = el.nextElementSibling
-    for (var i = 1; i < minPerSlide; i++) {
-        if (!next) {
-            // wrap carousel by using first child
-            next = items[0]
-        }
-        let cloneChild = next.cloneNode(true)
-        el.appendChild(cloneChild.children[0])
-        next = next.nextElementSibling
-    }
-})
-</script>
+
+
+<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet"/>-->
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>  -->
