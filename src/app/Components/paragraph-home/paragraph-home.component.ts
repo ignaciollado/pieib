@@ -24,7 +24,7 @@ getHomeContents() {
    *  category: pieib 
    *  ID: 2
    * */
-    this.contentService.getAllHomeContents(2)
+    this.contentService.getAllContentsByCategory(2)
           .subscribe( (homeContent: any) => {
             this.paragraphHontentItems = homeContent
             /* console.log ( this.paragraphHontentItems ) */

@@ -23,7 +23,7 @@ ngOnInit(): void {
     }
     
 getStaticHomeContents() {
-    this.contentService.getAllHomeContents(99999)
+    this.contentService.getAllContentsByCategory(99999)
           .subscribe( (homeContent: any) => {
             this.homeContentItems = homeContent
             console.log ( homeContent )

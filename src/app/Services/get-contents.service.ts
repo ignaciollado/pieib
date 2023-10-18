@@ -18,15 +18,27 @@ let theContentsServer:string = ""
 })
 export class GetContentsService {
 
+  status: string = "publish"
   constructor( private http: HttpClient ) { }
 
-  getAllHomeContents(categoryId: number) {
+  getAllContentsByCategory(categoryId: number) {
     theContentsServer = "https://app.pieib.com/wp-json/wp/v2/posts"
-    return  this.http.get<any>(theContentsServer+'?categories='+categoryId)
+                        +'?categories='+categoryId
+                        /* + '?&_embed' */
+                        /* +'?slug='+ localStorage.getItem('preferredLang') */
+                        /* +'?status=publish' */
+    console.log (theContentsServer)
+    return  this.http.get<any>(theContentsServer)
   }
 
-  getOneContentById(contentId: number) {0
-    theContentsServer = "https://app.pieib.com/wp-json/wp/v2/posts" + '/' + contentId + '?&_embed'
+  getOneContentById(contentId: number) {
+    theContentsServer = "https://app.pieib.com/wp-json/wp/v2/posts" 
+                        + '/' + contentId 
+                        + '?&_embed'
+                       /*  +'?categories='+ localStorage.getItem('preferredLang')  */ 
+                        /* +'?status=publish' */
+
+    console.log (theContentsServer)
     return this.http.get<any>(`${theContentsServer}`)
   }
 
